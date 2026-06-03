@@ -1,0 +1,72 @@
+{
+  "title": "Experience",
+  "subtitle": "Product engineering across healthcare, crypto, and contract delivery",
+  "items": [
+    {
+      "role": "Frontend Developer",
+      "company": "Tapsi Doctor",
+      "period": "Feb 2025 — Present",
+      "location": "Tehran, Iran · Healthcare",
+      "description": "Lead frontend on the company's web platform with ownership of performance, SEO, and accessibility.",
+      "achievements": [
+        "Migrated a legacy Pages Router codebase to Next.js 15 App Router with SSR/SSG, dynamic routing, and granular bundle splitting — ~40% reduction in initial load time",
+        "Built the design system layer with Tailwind CSS and Headless UI — pixel-perfect, accessibility-checked, reused across product surfaces",
+        "Integrated Socket.IO for real-time appointment status and patient–doctor chat",
+        "Set state-management direction with Zustand and conventions for forms, validation, and error boundaries"
+      ],
+      "technologies": ["React 18", "Next.js 15", "TypeScript", "Tailwind CSS", "Zustand", "Socket.IO"]
+    },
+    {
+      "role": "Frontend Developer (Independent contracts)",
+      "company": "Pool Khord · Hitobit · Cheetavel",
+      "period": "May 2024 — Jan 2025",
+      "location": "Remote",
+      "description": "Delivered three client products with shared architecture patterns: Atomic Design, Zustand/Recoil, React Hook Form, Socket.IO, and shadcn/ui.",
+      "achievements": [
+        "Pool Khord: comprehensive UI across React Native, React, and Next.js with responsive Tailwind layouts",
+        "Hitobit: contributed to front-end architecture with focus on performance and responsiveness",
+        "Cheetavel: designed foundational Next.js v15 architecture using the App Router for scalability"
+      ],
+      "technologies": ["React", "Next.js 15", "React Native", "Tailwind CSS", "shadcn/ui", "Zustand", "Recoil"]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Nobitex",
+      "period": "Jan 2022 — Apr 2024",
+      "location": "Tehran, Iran · Cryptocurrency exchange",
+      "description": "Shipped trading and account features on Iran's largest cryptocurrency exchange, partnering closely with design and product.",
+      "achievements": [
+        "Built real-time market data interfaces with Socket.IO — order books, tickers, and notifications under heavy throughput",
+        "Introduced and customized shadcn/ui as the shared component library, replacing inconsistent ad-hoc UI",
+        "Optimized rendering, bundle size, and asset loading — ~25% improvement in page-load times",
+        "Led refactor toward consistent design patterns — ~35% maintainability gain and faster bug resolution"
+      ],
+      "technologies": ["React", "TypeScript", "Socket.IO", "shadcn/ui", "Redux"]
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Axon",
+      "period": "Jun 2020 — Jan 2022",
+      "location": "Tehran, Iran",
+      "description": "Developed and maintained responsive web applications; collaborated with cross-functional teams on Redux-based state and performance.",
+      "achievements": [
+        "Owned dynamic landing pages and CMS surfaces; partnered with SEO to reduce handoff friction",
+        "Implemented BEM methodology — modular CSS, ~20% faster delivery, fewer style regressions",
+        "Built interfaces with Tailwind CSS, Bootstrap, and Vuetify across product initiatives"
+      ],
+      "technologies": ["React", "Redux", "Tailwind CSS", "Bootstrap", "Vuetify"]
+    },
+    {
+      "role": "Frontend Developer (Intern)",
+      "company": "Over Clock",
+      "period": "Jan 2020 — May 2020",
+      "location": "Tehran, Iran",
+      "description": "Early-career frontend role focused on community initiatives and solid CSS architecture fundamentals.",
+      "achievements": [
+        "Helped grow a community of frontend developers through meetups and virtual forums",
+        "Applied Tailwind CSS, Bootstrap, and Vuetify for production interfaces"
+      ],
+      "technologies": ["React", "CSS", "Tailwind CSS", "Bootstrap"]
+    }
+  ]
+}

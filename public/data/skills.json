@@ -1,0 +1,22 @@
+{
+  "title": "Skills",
+  "subtitle": "Tools and practices I use to deliver reliable software",
+  "categories": [
+    {
+      "name": "Frontend",
+      "items": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Framer Motion", "HTML/CSS"]
+    },
+    {
+      "name": "Performance",
+      "items": ["Core Web Vitals", "Lighthouse", "Bundle analysis", "Image optimization", "Caching"]
+    },
+    {
+      "name": "Quality",
+      "items": ["Jest", "Playwright", "ESLint", "Accessibility audits", "CI/CD"]
+    },
+    {
+      "name": "Collaboration",
+      "items": ["Figma", "Design systems", "Agile", "Technical writing", "Mentorship"]
+    }
+  ]
+}

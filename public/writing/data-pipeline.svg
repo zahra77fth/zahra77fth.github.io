@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="400" x2="640" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#042f2e"/>
+      <stop offset="1" stop-color="#134e4a"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg2)"/>
+  <rect x="80" y="120" width="140" height="160" rx="16" fill="#14b8a6" opacity="0.35"/>
+  <rect x="250" y="100" width="140" height="180" rx="16" fill="#2dd4bf" opacity="0.5"/>
+  <rect x="420" y="130" width="140" height="150" rx="16" fill="#5eead4" opacity="0.35"/>
+  <path d="M220 200h30v2h-30zm90 0h30v2h-30zm90 0h30v2h-30z" stroke="#99f6e4" stroke-width="3"/>
+  <text x="48" y="72" fill="#ccfbf1" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.15em">ARCHITECTURE</text>
+</svg>

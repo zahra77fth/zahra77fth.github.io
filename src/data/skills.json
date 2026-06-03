@@ -1,0 +1,54 @@
+{
+  "title": "Skills",
+  "subtitle": "Stack and practices I use across product teams",
+  "categories": [
+    {
+      "name": "Languages",
+      "items": ["JavaScript", "TypeScript", "HTML5", "CSS3", "Python (basic)"]
+    },
+    {
+      "name": "Frameworks & UI",
+      "items": [
+        "React",
+        "Next.js (App Router, Server Components)",
+        "React Native",
+        "Vue",
+        "Nuxt",
+        "Tailwind CSS",
+        "shadcn/ui",
+        "Headless UI",
+        "Storybook"
+      ]
+    },
+    {
+      "name": "State, data & real-time",
+      "items": [
+        "Zustand",
+        "Redux",
+        "Recoil",
+        "React Query",
+        "React Hook Form",
+        "Socket.IO",
+        "REST APIs",
+        "Prisma ORM"
+      ]
+    },
+    {
+      "name": "Quality & delivery",
+      "items": [
+        "Vitest",
+        "Jest",
+        "React Testing Library",
+        "Playwright",
+        "GitHub Actions",
+        "Vercel",
+        "Docker (basic)",
+        "Lighthouse",
+        "Web Vitals",
+        "WCAG AA",
+        "next-intl",
+        "RTL/LTR layouts"
+      ]
+    }
+  ]
+}

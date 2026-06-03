@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zahra Fattahi — Frontend Developer specializing in React, Next.js, and performance." />
+    <meta name="theme-color" content="#7aacd0" />
+    <script>
+      (function () {
+        var key = 'portfolio-theme';
+        var theme = 'light';
+        try {
+          var stored = localStorage.getItem(key);
+          if (stored === 'dark' || stored === 'light') theme = stored;
+          else if (window.matchMedia('(prefers-color-scheme: dark)').matches) theme = 'dark';
+        } catch (e) {}
+        var root = document.documentElement;
+        if (theme === 'dark') root.classList.add('dark');
+        root.style.colorScheme = theme;
+        root.dataset.theme = theme;
+        root.style.background =
+          theme === 'dark'
+            ? 'radial-gradient(ellipse 130% 90% at 48% 42%, #1e1b4b 0%, #0f172a 35%, #030712 70%, #020617 100%)'
+            : 'linear-gradient(180deg, #4a6d94 0%, #6d9ec4 40%, #a8cce6 74%, #edf4fa 100%)';
+      })();
+    </script>
+    <style>
+      html {
+        background: linear-gradient(180deg, #4a6d94 0%, #6d9ec4 40%, #a8cce6 74%, #edf4fa 100%);
+      }
+      html.dark {
+        background: radial-gradient(ellipse 130% 90% at 48% 42%, #1e1b4b 0%, #0f172a 35%, #030712 70%, #020617 100%);
+      }
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: transparent;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Pro</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

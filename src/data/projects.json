@@ -1,0 +1,38 @@
+{
+  "title": "Projects",
+  "subtitle": "Selected product work and contract deliveries",
+  "items": [
+    {
+      "name": "Tapsi Doctor Web Platform",
+      "description": "Healthcare platform rebuild on Next.js 15 with App Router migration, SSR/SSG, design system, and real-time patient–doctor flows.",
+      "image": "/projects/pulse.svg",
+      "tags": ["Next.js 15", "TypeScript", "Tailwind", "Socket.IO"],
+      "links": { "live": "", "github": "" },
+      "featured": true
+    },
+    {
+      "name": "Nobitex Trading Experience",
+      "description": "High-volume exchange UI with real-time order books, tickers, and notifications — performance-tuned for heavy throughput.",
+      "image": "/projects/atlas.svg",
+      "tags": ["React", "Socket.IO", "shadcn/ui", "Performance"],
+      "links": { "live": "https://nobitex.ir", "github": "" },
+      "featured": false
+    },
+    {
+      "name": "Cheetavel — Next.js Foundation",
+      "description": "Greenfield App Router architecture for a scalable Next.js v15 product with Atomic Design and shadcn/ui.",
+      "image": "/projects/flow.svg",
+      "tags": ["Next.js 15", "App Router", "shadcn/ui", "Zustand"],
+      "links": { "live": "", "github": "" },
+      "featured": false
+    },
+    {
+      "name": "Pool Khord — Cross-platform UI",
+      "description": "Full product UI across React Native, React, and Next.js with responsive Tailwind layouts and shared patterns.",
+      "image": "/projects/green.svg",
+      "tags": ["React Native", "Next.js", "Tailwind", "React Hook Form"],
+      "links": { "live": "", "github": "" },
+      "featured": false
+    }
+  ]
+}

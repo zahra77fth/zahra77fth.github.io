@@ -1,0 +1,31 @@
+{
+  "name": "Zahra Fattahi",
+  "title": "Frontend Developer",
+  "tagline": "Six years building React and Next.js products across fintech, healthcare, and high-traffic consumer platforms.",
+  "email": "zafth98@gmail.com",
+  "location": "Tehran, Iran",
+  "availability": "Open to full-time and contract frontend roles",
+  "domain": "",
+  "resumeUrl": "/resume.pdf",
+  "social": {
+    "github": "https://github.com/zahra-hsb",
+    "linkedin": "https://www.linkedin.com/in/zahra-hb-713760241/",
+    "twitter": "",
+    "dribbble": ""
+  },
+  "navigation": [
+    { "label": "About", "href": "/#about" },
+    { "label": "Skills", "href": "/#skills" },
+    { "label": "Experience", "href": "/#experience" },
+    { "label": "Projects", "href": "/#projects" },
+    { "label": "Education", "href": "/#education" },
+    { "label": "Writing", "href": "/#writing" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "seo": {
+    "title": "Zahra Fattahi — Frontend Developer",
+    "description": "Portfolio of Zahra Fattahi, a frontend engineer specializing in React, Next.js, design systems, performance, and real-time web applications.",
+    "keywords": "Zahra Fattahi, frontend developer, React, Next.js, TypeScript, Tehran, healthcare, fintech",
+    "ogImage": "/og-image.svg"
+  }
+}

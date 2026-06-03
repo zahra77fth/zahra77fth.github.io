@@ -1,0 +1,50 @@
+{
+  "title": "Projects",
+  "subtitle": "Selected work with measurable impact",
+  "items": [
+    {
+      "name": "Pulse Analytics",
+      "description": "Real-time analytics dashboard for product teams with sub-second chart updates and role-based views.",
+      "image": "/projects/pulse.svg",
+      "tags": ["React", "D3", "WebSockets"],
+      "links": {
+        "live": "https://vercel.com",
+        "github": ""
+      },
+      "featured": true
+    },
+    {
+      "name": "Atlas Design System",
+      "description": "Open-source component library with accessible primitives, dark mode, and documentation powered by Storybook.",
+      "image": "/projects/atlas.svg",
+      "tags": ["TypeScript", "Storybook", "A11y"],
+      "links": {
+        "live": "https://storybook.js.org",
+        "github": "https://github.com/storybookjs/storybook"
+      },
+      "featured": true
+    },
+    {
+      "name": "Flow Checkout",
+      "description": "Optimized checkout experience that increased conversion by 12% through progressive disclosure and smart defaults.",
+      "image": "/projects/flow.svg",
+      "tags": ["Next.js", "Stripe", "A/B Testing"],
+      "links": {
+        "live": "https://stripe.com",
+        "github": ""
+      },
+      "featured": false
+    },
+    {
+      "name": "GreenRoute",
+      "description": "Carbon-aware route planner helping logistics teams reduce emissions with transparent data visualizations.",
+      "image": "/projects/green.svg",
+      "tags": ["React", "Mapbox", "Tailwind"],
+      "links": {
+        "live": "https://www.mapbox.com",
+        "github": ""
+      },
+      "featured": false
+    }
+  ]
+}

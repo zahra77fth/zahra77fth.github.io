@@ -1,0 +1,27 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "headline": "Building products with clarity, speed, and care.",
+    "ctaPrimary": { "label": "View my work", "href": "/#projects" },
+    "ctaSecondary": { "label": "Get in touch", "href": "/contact" }
+  },
+  "about": {
+    "title": "About me",
+    "subtitle": "Engineer · Designer-minded · Team player",
+    "paragraphs": [
+      "I'm a senior frontend engineer with 8+ years of experience shipping production apps for startups and enterprise teams. I care deeply about performance budgets, design systems, and inclusive UX.",
+      "My sweet spot is React ecosystems, design tokens, and turning ambiguous product goals into shippable milestones. I mentor engineers, collaborate closely with design, and document decisions so teams move faster.",
+      "When I'm not coding, I contribute to open source, write about web performance, and speak at local meetups about accessibility and Core Web Vitals."
+    ],
+    "highlights": [
+      { "label": "Years experience", "value": "8+" },
+      { "label": "Products shipped", "value": "24" },
+      { "label": "Teams led", "value": "5" },
+      { "label": "Lighthouse avg.", "value": "98" }
+    ],
+    "image": {
+      "src": "/avatar.svg",
+      "alt": "Portrait of Alex Morgan"
+    }
+  }
+}

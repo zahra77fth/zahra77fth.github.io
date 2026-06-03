@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <rect width="640" height="400" fill="#3b0764"/>
+  <circle cx="320" cy="200" r="100" stroke="#e879f9" stroke-width="3" fill="#a855f7" fill-opacity="0.2"/>
+  <circle cx="320" cy="200" r="60" stroke="#f0abfc" stroke-width="2" fill="none"/>
+  <path d="M320 100v40M320 260v40M220 200h40M380 200h40" stroke="#f5d0fe" stroke-width="3" stroke-linecap="round"/>
+  <text x="48" y="72" fill="#fae8ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.15em">REACT HOOKS</text>
+</svg>

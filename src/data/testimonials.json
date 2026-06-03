@@ -1,0 +1,46 @@
+{
+  "title": "Technical writing",
+  "subtitle": "Published articles on React, TypeScript, and frontend architecture",
+  "items": [
+    {
+      "title": "Deep Dive into React 19 Compiler, useEvent, and Performance Patterns",
+      "excerpt": "Practical guidance for teams adopting the new toolchain — compiler mental models, useEvent semantics, and measurable performance wins.",
+      "image": "/writing/react-19.svg",
+      "url": "",
+      "tags": ["React", "Performance"],
+      "readTime": "8 min read"
+    },
+    {
+      "title": "Don't Let Your Backend Control Your Frontend: Build a Unified Data Pipeline",
+      "excerpt": "Patterns for cleaner client–server boundaries, cache-friendly fetching, and predictable UI state when APIs evolve.",
+      "image": "/writing/data-pipeline.svg",
+      "url": "",
+      "tags": ["Architecture", "Data"],
+      "readTime": "6 min read"
+    },
+    {
+      "title": "Building a Dynamic Form with React Hook Form and TypeScript",
+      "excerpt": "Typed schemas, accessible field wiring, and validation flows that scale from simple forms to multi-step wizards.",
+      "image": "/writing/rhf-typescript.svg",
+      "url": "",
+      "tags": ["TypeScript", "React Hook Form"],
+      "readTime": "7 min read"
+    },
+    {
+      "title": "useEffectEvent and the Next Generation of React Effects",
+      "excerpt": "How upcoming effect APIs reduce stale closures and make event-driven side effects easier to reason about.",
+      "image": "/writing/useeffect-event.svg",
+      "url": "",
+      "tags": ["React", "Hooks"],
+      "readTime": "5 min read"
+    },
+    {
+      "title": "React.js Fundamentals — From JSX to Composition",
+      "excerpt": "Core concepts for engineers leveling up: elements vs components, composition, keys, and when to reach for context.",
+      "image": "/writing/react-fundamentals.svg",
+      "url": "",
+      "tags": ["React", "Basics"],
+      "readTime": "10 min read"
+    }
+  ]
+}

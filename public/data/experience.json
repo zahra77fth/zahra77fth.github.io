@@ -1,0 +1,45 @@
+{
+  "title": "Experience",
+  "subtitle": "Roles where I owned outcomes end to end",
+  "items": [
+    {
+      "role": "Senior Frontend Engineer",
+      "company": "Northwind Labs",
+      "period": "2022 — Present",
+      "location": "Remote",
+      "description": "Led the migration of a legacy dashboard to React 19, cutting LCP by 42% and improving accessibility scores to WCAG AA.",
+      "achievements": [
+        "Introduced a component library adopted by 4 product squads",
+        "Reduced bundle size by 38% through code splitting and lazy routes",
+        "Partnered with design on a token-based theming system"
+      ],
+      "technologies": ["React", "TypeScript", "Vite", "Tailwind"]
+    },
+    {
+      "role": "Frontend Engineer",
+      "company": "Brightline Health",
+      "period": "2019 — 2022",
+      "location": "San Francisco, CA",
+      "description": "Built patient-facing flows used by 200k+ monthly active users with a focus on mobile performance and HIPAA-aware UX patterns.",
+      "achievements": [
+        "Shipped telehealth scheduling with 99.9% uptime during peak demand",
+        "Established frontend testing standards across the org",
+        "Mentored 3 junior engineers through promotion cycles"
+      ],
+      "technologies": ["React", "Redux", "Styled Components", "Jest"]
+    },
+    {
+      "role": "UI Developer",
+      "company": "Studio Meridian",
+      "period": "2017 — 2019",
+      "location": "Oakland, CA",
+      "description": "Delivered marketing sites and product prototypes for agency clients with strict brand and performance requirements.",
+      "achievements": [
+        "Maintained Lighthouse performance scores above 95 for all launches",
+        "Integrated headless CMS workflows for non-technical editors",
+        "Built reusable animation patterns with reduced-motion support"
+      ],
+      "technologies": ["JavaScript", "GSAP", "WordPress", "Sass"]
+    }
+  ]
+}

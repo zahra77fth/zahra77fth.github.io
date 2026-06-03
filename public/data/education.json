@@ -1,0 +1,30 @@
+{
+  "title": "Education",
+  "subtitle": "Formal training and continuous learning",
+  "items": [
+    {
+      "degree": "B.S. Computer Science",
+      "school": "University of California, Berkeley",
+      "period": "2013 — 2017",
+      "description": "Focus on human-computer interaction and software engineering. Teaching assistant for web development courses."
+    },
+    {
+      "degree": "Certified Professional in Accessibility Core Competencies (CPACC)",
+      "school": "IAAP",
+      "period": "2021",
+      "description": "Credential covering accessibility standards, inclusive design, and assistive technology fundamentals."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Google Mobile Web Specialist",
+      "issuer": "Google",
+      "year": "2020"
+    },
+    {
+      "name": "AWS Cloud Practitioner",
+      "issuer": "Amazon Web Services",
+      "year": "2019"
+    }
+  ]
+}

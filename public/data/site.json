@@ -1,0 +1,31 @@
+{
+  "name": "Alex Morgan",
+  "title": "Senior Frontend Engineer",
+  "tagline": "I design and ship fast, accessible web experiences that users love.",
+  "email": "hello@alexmorgan.dev",
+  "location": "San Francisco, CA",
+  "availability": "Open to freelance & full-time roles",
+  "domain": "https://alexmorgan.dev",
+  "resumeUrl": "/resume.pdf",
+  "social": {
+    "github": "https://github.com/vercel",
+    "linkedin": "https://www.linkedin.com/in/",
+    "twitter": "https://x.com/vercel",
+    "dribbble": ""
+  },
+  "navigation": [
+    { "label": "About", "href": "/#about" },
+    { "label": "Skills", "href": "/#skills" },
+    { "label": "Experience", "href": "/#experience" },
+    { "label": "Projects", "href": "/#projects" },
+    { "label": "Education", "href": "/#education" },
+    { "label": "Testimonials", "href": "/#testimonials" },
+    { "label": "Contact", "href": "/contact" }
+  ],
+  "seo": {
+    "title": "Alex Morgan — Senior Frontend Engineer",
+    "description": "Portfolio of Alex Morgan, a senior frontend engineer focused on performance, accessibility, and polished user interfaces.",
+    "keywords": "frontend engineer, react developer, portfolio, web performance",
+    "ogImage": "/og-image.svg"
+  }
+}

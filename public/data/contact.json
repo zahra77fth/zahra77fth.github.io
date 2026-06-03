@@ -1,0 +1,50 @@
+{
+  "title": "Contact",
+  "subtitle": "Tell me about your project — I typically reply within one business day.",
+  "form": {
+    "nameLabel": "Your name",
+    "emailLabel": "Email address",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "submitLabel": "Send message",
+    "successMessage": "Thanks for reaching out. Your message has been recorded locally — connect a form backend to deliver it.",
+    "topics": [
+      "Freelance project",
+      "Full-time opportunity",
+      "Speaking / workshop",
+      "Collaboration",
+      "Other"
+    ]
+  },
+  "info": [
+    {
+      "label": "Email",
+      "value": "hello@alexmorgan.dev",
+      "href": "mailto:hello@alexmorgan.dev"
+    },
+    {
+      "label": "Location",
+      "value": "San Francisco, CA (PST)",
+      "href": ""
+    },
+    {
+      "label": "Availability",
+      "value": "Open to freelance & full-time roles",
+      "href": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "What types of projects do you take on?",
+      "answer": "Product engineering, design systems, performance audits, and team mentorship for React/TypeScript codebases."
+    },
+    {
+      "question": "Do you work remotely?",
+      "answer": "Yes — I'm based in San Francisco and collaborate effectively across time zones."
+    },
+    {
+      "question": "How do I customize this portfolio?",
+      "answer": "Edit the JSON files in public/data/, replace images in public/, and update site.json with your details."
+    }
+  ]
+}

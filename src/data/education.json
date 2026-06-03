@@ -1,0 +1,40 @@
+{
+  "title": "Education",
+  "subtitle": "Computer science studies and continuous learning",
+  "items": [
+    {
+      "degree": "M.S. in Computer Science",
+      "school": "In progress",
+      "period": "Mar 2022 — Present",
+      "description": "Graduate studies in computer science while working full-time as a frontend engineer."
+    },
+    {
+      "degree": "B.S. in Computer Science",
+      "school": "Completed Aug 2021",
+      "period": "Aug 2017 — Aug 2021",
+      "description": "Undergraduate foundation in computer science, overlapping with early frontend roles and internships."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Persian",
+      "issuer": "Native",
+      "year": "—"
+    },
+    {
+      "name": "English",
+      "issuer": "Professional working proficiency",
+      "year": "—"
+    },
+    {
+      "name": "Turkish",
+      "issuer": "Professional working proficiency",
+      "year": "—"
+    },
+    {
+      "name": "Dutch",
+      "issuer": "A2",
+      "year": "—"
+    }
+  ]
+}

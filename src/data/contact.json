@@ -1,0 +1,55 @@
+{
+  "title": "Contact",
+  "subtitle": "Interested in frontend roles, contract work, or technical collaboration? I'd love to hear from you.",
+  "form": {
+    "nameLabel": "Your name",
+    "emailLabel": "Email address",
+    "subjectLabel": "Subject",
+    "messageLabel": "Message",
+    "submitLabel": "Send message",
+    "successMessage": "Thanks for reaching out. Your message has been recorded locally — connect a form backend (e.g. Formspree) to deliver it to zafth98@gmail.com.",
+    "topics": [
+      "Full-time opportunity",
+      "Contract / freelance",
+      "Technical writing",
+      "Collaboration",
+      "Other"
+    ]
+  },
+  "info": [
+    {
+      "label": "Email",
+      "value": "zafth98@gmail.com",
+      "href": "mailto:zafth98@gmail.com"
+    },
+    {
+      "label": "Phone",
+      "value": "+98 912 014 1339",
+      "href": "tel:+989120141339"
+    },
+    {
+      "label": "Location",
+      "value": "Tehran, Iran",
+      "href": ""
+    },
+    {
+      "label": "Availability",
+      "value": "Open to full-time and contract frontend roles",
+      "href": ""
+    }
+  ],
+  "faq": [
+    {
+      "question": "What kind of roles are you looking for?",
+      "answer": "Senior frontend and lead-leaning IC roles focused on React, Next.js, design systems, performance, and real-time product surfaces — especially in healthcare and fintech."
+    },
+    {
+      "question": "Are you open to remote work?",
+      "answer": "Yes. I'm based in Tehran and have delivered successfully for distributed teams and international contract clients."
+    },
+    {
+      "question": "Can I download your résumé?",
+      "answer": "Yes — use the résumé link on the homepage or contact page to download the latest PDF."
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="640" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1e1b4b"/>
+      <stop offset="1" stop-color="#312e81"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="120" y1="80" x2="520" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#bg)"/>
+  <circle cx="520" cy="90" r="120" fill="#818cf8" opacity="0.25"/>
+  <circle cx="100" cy="320" r="90" fill="#22d3ee" opacity="0.2"/>
+  <path d="M180 140h280v24H180v-24zm0 56h220v20H180v-20zm0 52h260v20H180v-20zm0 52h180v20H180v-20z" fill="url(#glow)" opacity="0.9"/>
+  <text x="48" y="72" fill="#e0e7ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600" letter-spacing="0.2em">REACT 19</text>
+</svg>
