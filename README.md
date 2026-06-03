@@ -2,7 +2,7 @@
 
 A modern, performance-minded developer portfolio for **Zahra Fattahi** — built with React 19, TypeScript, Tailwind CSS 4, and immersive 3D backgrounds. Content lives in JSON so you can update copy, projects, and experience without touching component code.
 
-[![Live demo](https://img.shields.io/badge/demo-coming_soon-0ea5e9?style=flat-square)](https://github.com/zahra-hsb/portfolio-pro)
+[![Live demo](https://img.shields.io/badge/demo-GitHub Pages-0ea5e9?style=flat-square)](https://github.com/zahra77fth/portfolio)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev)
 [![TypeScript](https://img.shields.io/badge/TypeScript-6-3178c6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![Vite](https://img.shields.io/badge/Vite-8-646cff?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
@@ -29,8 +29,8 @@ A modern, performance-minded developer portfolio for **Zahra Fattahi** — built
 ## Quick start
 
 ```bash
-git clone https://github.com/zahra-hsb/portfolio-pro.git
-cd portfolio-pro
+git clone https://github.com/zahra77fth/portfolio.git
+cd portfolio
 npm install
 npm run dev
 ```
@@ -80,6 +80,13 @@ src/
 ```
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for performance conventions (lazy sections, build-time JSON, reduced motion).
+
+## Git workflow
+
+Branching and commit conventions: [docs/GIT_WORKFLOW.md](./docs/GIT_WORKFLOW.md).
+
+- `main` — production / deploy
+- `develop` — integration; branch features from here
 
 ## Publish to GitHub (no Homebrew)
 
