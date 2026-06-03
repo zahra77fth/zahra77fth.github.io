@@ -81,6 +81,21 @@ src/
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for performance conventions (lazy sections, build-time JSON, reduced motion).
 
+## Publish to GitHub (no Homebrew)
+
+GitHub CLI is bundled under `.tools/`. From the project root:
+
+```bash
+./scripts/publish-to-github.sh
+```
+
+The script runs `gh auth login` if needed, then creates `portfolio-pro` on your account and pushes `main`. Or use the website: [create a new repo](https://github.com/new) (empty, no README), then:
+
+```bash
+git remote add origin https://github.com/YOUR_USERNAME/portfolio-pro.git
+git push -u origin main
+```
+
 ## Deploy
 
 ### Vercel (recommended)
