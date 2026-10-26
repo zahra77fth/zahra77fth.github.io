@@ -36,6 +36,7 @@ export const SettingsSchema = z.object({
   excludeSeniority: z.array(z.string()).default(["principal", "director", "head of", "vp", "intern", "werkstudent", "working student", "stage", "stagiair"]),
   excludeCompanies: z.array(z.string()).default([]),
   autoSubmit: z.boolean().default(false),
+  acceptPrivacyNotices: z.boolean().default(false),
   discoveryOnly: z.boolean().default(true),
   schedule: z.string().default("0 7 * * *"),
   timezone: z.string().default("Europe/Berlin"),
