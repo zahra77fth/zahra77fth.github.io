@@ -1,5 +1,5 @@
 import { getJson, htmlToText, decodeEntities, politeFetch, HttpError } from "../http";
-import type { DiscoveryContext, RawJob, SourceAdapter, SourceResult } from "../types";
+import type { RawJob, SourceAdapter, SourceResult } from "../types";
 
 function err(e: unknown): SourceResult {
   const notes = e instanceof Error ? e.message : String(e);

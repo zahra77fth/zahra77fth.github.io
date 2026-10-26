@@ -189,7 +189,7 @@ describe("state machine, idempotency and recovery", () => {
   it("refuses to submit a position already submitted through another listing", async () => {
     const id = await readyApp();
     const job = await prisma.job.findFirstOrThrow();
-    const twinJob = await prisma.job.create({ data: { ...job, id: undefined, sourceId: "other", externalId: "x", canonicalUrl: "https://other/x", createdAt: undefined, updatedAt: undefined } });
+    const twinJob = await prisma.job.create({ data: { ...job, id: undefined, matchExplanation: undefined, rawData: undefined, sourceId: "other", externalId: "x", canonicalUrl: "https://other/x", createdAt: undefined, updatedAt: undefined } });
     const { app: twin } = await createApplication(twinJob.id, 50, "t");
     await prisma.application.update({ where: { id: twin.id }, data: { state: "SUBMITTED_VERIFIED" } });
     expect(await acquireApplyLock(id, "w")).toBeNull();

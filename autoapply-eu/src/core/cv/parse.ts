@@ -20,7 +20,7 @@ export async function extractText(filePath: string): Promise<string> {
 async function pdfText(buf: Buffer): Promise<string> {
   const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
   const fontDir = path.join(path.dirname(createRequire(import.meta.url).resolve("pdfjs-dist/package.json")), "standard_fonts") + path.sep;
-  const task = pdfjs.getDocument({ data: new Uint8Array(buf), isEvalSupported: false, standardFontDataUrl: fontDir });
+  const task = pdfjs.getDocument({ data: new Uint8Array(buf), standardFontDataUrl: fontDir });
   const doc = await task.promise;
   const pages: string[] = [];
   for (let i = 1; i <= doc.numPages; i++) {
