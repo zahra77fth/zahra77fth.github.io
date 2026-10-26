@@ -108,6 +108,7 @@ export async function uploadCvAction(form: FormData): Promise<ActionResult> {
   await requireSession();
   const file = form.get("cv");
   if (!(file instanceof File) || !/\.(pdf|docx)$/i.test(file.name)) return { ok: false, message: "Choose a PDF or DOCX file" };
+  if (file.size > 10 * 1024 * 1024) return { ok: false, message: "The CV file is larger than 10 MB" };
   const dir = `${env.storageDir}/master-cv`;
   await fs.mkdir(dir, { recursive: true, mode: 0o700 });
   const dest = `${dir}/${file.name.replace(/[^\w.-]+/g, "_")}`;
