@@ -13,12 +13,12 @@ interface ArbeitnowJob {
   created_at: number;
 }
 
-/** Arbeitnow public job-board API: country-wide German listings, many from SMEs and startups. */
+/** Arbeitnow public job-board API: European listings (strong German SME/startup coverage); country comes from each location. */
 export function arbeitnow(maxPages = 40): SourceAdapter {
   return {
     id: "arbeitnow",
     kind: "board",
-    name: "Arbeitnow (Germany, public API)",
+    name: "Arbeitnow (public API)",
     async discover(ctx) {
       const jobs: RawJob[] = [];
       let fetched = 0;
@@ -43,7 +43,6 @@ export function arbeitnow(maxPages = 40): SourceAdapter {
               postedAt: j.created_at ? new Date(j.created_at * 1000) : null,
               atsKind: null,
               remote: j.remote,
-              countryCode: "DE",
             });
           }
           if (!res.links?.next || !res.data.length || (await ctx.shouldStop())) break;
@@ -103,7 +102,7 @@ export function bundesagentur(): SourceAdapter {
                 descriptionText: "",
                 postedAt: j.aktuelleVeroeffentlichungsdatum ? new Date(j.aktuelleVeroeffentlichungsdatum) : null,
                 atsKind: null,
-                countryCode: "DE",
+                countryCode: j.arbeitsort?.land === "Deutschland" ? "DE" : null,
               });
             }
             if (list.length < 100 || (await ctx.shouldStop())) break;
