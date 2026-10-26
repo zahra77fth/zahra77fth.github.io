@@ -9,6 +9,7 @@ async function secretOrEnv(key: string) {
 }
 
 export async function getTransport() {
+  if (process.env.EMAIL_TRANSPORT === "json") return { from: "autoapply@localhost", transport: nodemailer.createTransport({ jsonTransport: true }) };
   const gmailRefresh = await secretOrEnv("GMAIL_REFRESH_TOKEN");
   const from = process.env.NOTIFY_FROM || (await secretOrEnv("SMTP_USER"));
   if (gmailRefresh) {

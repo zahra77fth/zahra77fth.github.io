@@ -33,7 +33,7 @@ export type Country = "DE" | "NL" | "EU_REMOTE";
 export type RemotePolicy = "ONSITE" | "HYBRID" | "REMOTE" | "UNKNOWN";
 
 function re(words: string[]) {
-  return new RegExp(`(?<![\\p{L}])(${words.map((w) => w.replace(/[.*+?^${}()|[\]\\']/g, "\\$&")).join("|")})(?![\\p{L}])`, "iu");
+  return new RegExp(`(?<![\\p{L}])(${words.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})(?![\\p{L}])`, "iu");
 }
 
 const DE_NAME_RE = re(["Germany", "Deutschland", "Duitsland", "Allemagne", ...DE_STATES.filter((s) => s !== "NRW")]);

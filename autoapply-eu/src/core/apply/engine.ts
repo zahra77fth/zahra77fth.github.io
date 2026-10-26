@@ -137,14 +137,22 @@ export async function detectBlocker(page: Page): Promise<Blocker> {
 /** Collects visible form controls, tagging each with a stable data attribute for later filling. */
 export async function collectFields(page: Page, formSelector: string): Promise<FieldDescriptor[]> {
   return page.evaluate((sel) => {
+    document.querySelectorAll("[data-aa]").forEach((el) => el.removeAttribute("data-aa"));
     const forms = Array.from(document.querySelectorAll(sel)) as HTMLElement[];
     const root = forms.sort((a, b) => b.querySelectorAll("input,select,textarea").length - a.querySelectorAll("input,select,textarea").length)[0] ?? document.body;
-    const visible = (el: Element) => {
-      const h = el as HTMLElement;
-      if (h.getAttribute("type") === "file") return true;
-      const r = h.getBoundingClientRect();
+    const shown = (h: Element | null | undefined) => {
+      if (!h) return false;
+      const r = (h as HTMLElement).getBoundingClientRect();
       const st = getComputedStyle(h);
       return r.width > 0 && r.height > 0 && st.visibility !== "hidden" && st.display !== "none";
+    };
+    const visible = (el: Element) => {
+      const h = el as HTMLElement;
+      const type = h.getAttribute("type");
+      // File inputs and styled checkboxes are often visually hidden behind a visible label or button.
+      if (type === "file") return shown(h.parentElement) || shown(h.closest("label")) || shown(h.closest("div"));
+      if (type === "radio" || type === "checkbox") return shown(h) || shown(h.closest("label")) || (!!h.id && shown(document.querySelector(`label[for="${CSS.escape(h.id)}"]`)));
+      return shown(h);
     };
     const labelFor = (el: HTMLElement): string => {
       const id = el.id;
@@ -187,7 +195,7 @@ export async function collectFields(page: Page, formSelector: string): Promise<F
     for (const el of Array.from(root.querySelectorAll("input, select, textarea")) as (HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement)[]) {
       const type = (el.getAttribute("type") || (el.tagName === "SELECT" ? "select" : el.tagName === "TEXTAREA" ? "textarea" : "text")).toLowerCase();
       if (["hidden", "submit", "button", "reset", "image"].includes(type)) continue;
-      if (!visible(el) && type !== "radio" && type !== "checkbox") continue;
+      if (!visible(el)) continue;
       if (el.disabled) continue;
       const name = el.getAttribute("name") || el.id || "";
       if (type === "radio") {

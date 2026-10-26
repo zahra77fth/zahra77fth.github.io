@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import { createRequire } from "node:module";
 import { canonicalSkill, findSkills } from "../skills";
 import { ExtractionResult, Profile, ProfileSchema } from "../profile/schema";
 import { chatJson, getLlmConfig } from "../llm";
@@ -7,19 +8,47 @@ import { chatJson, getLlmConfig } from "../llm";
 export async function extractText(filePath: string): Promise<string> {
   const ext = path.extname(filePath).toLowerCase();
   const buf = await fs.readFile(filePath);
-  if (ext === ".pdf") {
-    // Import the inner module: the package entry runs a debug self-test on import.
-    const mod = (await import("pdf-parse/lib/pdf-parse.js")) as unknown as {
-      default: (b: Buffer) => Promise<{ text: string }>;
-    };
-    return normalizeText((await mod.default(buf)).text);
-  }
+  if (ext === ".pdf") return normalizeText(await pdfText(buf));
   if (ext === ".docx") {
     const mammoth = await import("mammoth");
     const { value } = await mammoth.extractRawText({ buffer: buf });
     return normalizeText(value);
   }
   throw new Error(`Unsupported CV format: ${ext}`);
+}
+
+async function pdfText(buf: Buffer): Promise<string> {
+  const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
+  const fontDir = path.join(path.dirname(createRequire(import.meta.url).resolve("pdfjs-dist/package.json")), "standard_fonts") + path.sep;
+  const task = pdfjs.getDocument({ data: new Uint8Array(buf), isEvalSupported: false, standardFontDataUrl: fontDir });
+  const doc = await task.promise;
+  const pages: string[] = [];
+  for (let i = 1; i <= doc.numPages; i++) {
+    const content = await (await doc.getPage(i)).getTextContent();
+    let line = "";
+    const lines: string[] = [];
+    let lastY: number | null = null;
+    for (const item of content.items) {
+      if (!("str" in item)) continue;
+      const y = item.transform[5];
+      if (lastY !== null && Math.abs(y - lastY) > 2) {
+        lines.push(line);
+        line = "";
+      }
+      line += item.str;
+      if (item.hasEOL) {
+        lines.push(line);
+        line = "";
+        lastY = null;
+        continue;
+      }
+      lastY = y;
+    }
+    if (line) lines.push(line);
+    pages.push(lines.join("\n"));
+  }
+  await task.destroy();
+  return pages.join("\n");
 }
 
 export function normalizeText(t: string): string {

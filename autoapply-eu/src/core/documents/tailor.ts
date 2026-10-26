@@ -80,7 +80,7 @@ export function unsupportedClaims(generated: string, profile: Profile, job: JobF
   const mine = new Set(profile.skills.map((s) => s.toLowerCase()));
   const inCorpus = new Set(findSkills(corpus).map((s) => s.toLowerCase()));
   for (const s of findSkills(generated)) if (!mine.has(s.toLowerCase()) && !inCorpus.has(s.toLowerCase())) issues.push(`technology "${s}"`);
-  for (const n of generated.match(/\b\d+(?:[.,]\d+)?\s?(?:%|\+|years?|jahre|jaar|x)\b/gi) ?? []) {
+  for (const n of generated.match(/\b\d+(?:[.,]\d+)?\s?(?:%|\+|years?\b|jahre\b|jaar\b|x\b)/gi) ?? []) {
     const digits = n.match(/\d+(?:[.,]\d+)?/)![0];
     if (!corpus.includes(digits)) issues.push(`figure "${n.trim()}"`);
   }
